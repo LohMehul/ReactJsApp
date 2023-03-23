@@ -1,13 +1,6 @@
 import React, { Component } from 'react';
 
 class ClassCompoConstructor extends Component {
-    constructor(props) {
-        super(props);
-    }
-    // constructor() {
-    //     console.log("called con");
-    // }
-    
     render() {
         return (
             <div>

@@ -5,8 +5,6 @@ import AboutPage from "./AboutPage.jsx";
 import ContactPage from "./ContactPage.jsx";
 import HeaderComp from "./CommonCompo/Header";
 import ExampleCompo from "./ExampleCompo";
-import ClassCompoIntro from "./ClassCompo/01ClassCompoIntro.jsx";
-import ClassCompoMenu from "./ClassCompo/ClassCompoMenu";
 
 const ClassCompoRoute = React.lazy(()=>{ return import('./ClassCompo/ClassCompoRoute.jsx') })
 // const FunctionalCompoRoute = React.lazy(()=>import('./FunctionalCompo/FunctionalCompoRoute'))

@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link,Outlet} from "react-router-dom";
 import ClassAndFunctionCompo from "./ClassAndFunctionalCompo";
 
 const HomePage = () => {
