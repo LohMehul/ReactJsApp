@@ -4,7 +4,7 @@ import HomePage from "./HomePage.jsx";
 import AboutPage from "./AboutPage.jsx";
 // import ContactPage from "./ContactPage.jsx";
 import HeaderComp from "./CommonCompo/Header.jsx";
-// import ExampleCompo from "./ExampleCompo";
+import ExampleCompo from "./ExampleCompo.jsx";
 
 const MainRouter = createBrowserRouter([
     {
@@ -14,6 +14,10 @@ const MainRouter = createBrowserRouter([
     {
         path: "/about",
         element: <><HeaderComp /><AboutPage /></>,
+    },
+    {
+        path: "/examples",
+        element: <><HeaderComp /><ExampleCompo /></>,
     },
 ]);
 
