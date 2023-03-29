@@ -5,7 +5,7 @@ import AboutPage from "./AboutPage.jsx"; //import AboutPage as AboutPage , but b
 // import ContactPage from "./ContactPage.jsx";
 import HeaderComp from "./CommonCompo/Header.jsx"; //import header page as HeaderComp , but before import it must be exported .
 import ExampleCompo from "./ExampleCompo.jsx"; //import ExampleCompo page as ExampleCompo , but before import it must be exported .
-
+// import ImageCompo from "./CommonCompo/"
 const MainRouter = createBrowserRouter([
     {
         path: "/", // this path show Home Page or main index page
@@ -19,6 +19,10 @@ const MainRouter = createBrowserRouter([
         path: "/examples",
         element: <><HeaderComp /><ExampleCompo /></>, // if URL give /about after home page or index page below mentioned Components
     },
+    // {
+    //     path: "/images",
+    //     element: <><HeaderComp /><ImageCompo /></>, // if URL give /about after home page or index page below mentioned Components
+    // },
 ]);
 
 export default MainRouter;  // export router to access it whenever it was imported , to access router out side to this file you must(compulsory) have to export it.

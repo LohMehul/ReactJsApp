@@ -21,6 +21,8 @@ import {Link} from "react-router-dom";
 
 // The export declaration is used to export values from a JavaScript module.
 //Exported values can then be imported into other programs with the import declaration or dynamic import. 
+
+  
 export default function App() {
   const [showBasic, setShowBasic] = useState(false);
 
@@ -52,6 +54,9 @@ export default function App() {
             <MDBNavbarItem>
               <Link className='nav-link' to='/examples'>Examples</Link>
             </MDBNavbarItem>
+            {/* <MDBNavbarItem>
+              <Link className='nav-link' to='/images'>Images</Link>
+            </MDBNavbarItem> */}
             <MDBNavbarItem>
               <MDBDropdown>
                 <MDBDropdownToggle tag='a' className='nav-link' role='button'>
