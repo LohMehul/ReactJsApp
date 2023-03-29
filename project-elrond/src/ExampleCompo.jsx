@@ -6,10 +6,12 @@ import {
     MDBCardText,
     MDBCardImage,
     MDBBtn
-} from 'mdb-react-ui-kit';
+} from 'mdb-react-ui-kit';    
 
 const ExampleCompo = () => {
     return (
+
+        // card code form bootstrap 
         <>
             <div className='container'>
                 <div className='col'>
@@ -61,4 +63,4 @@ const ExampleCompo = () => {
     );
 };
 
-export default ExampleCompo;
+export default ExampleCompo;  //component exported
