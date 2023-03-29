@@ -16,6 +16,11 @@ import {
   MDBCollapse,
 } from 'mdb-react-ui-kit';
 import {Link} from "react-router-dom";
+
+
+
+// The export declaration is used to export values from a JavaScript module.
+//Exported values can then be imported into other programs with the import declaration or dynamic import. 
 export default function App() {
   const [showBasic, setShowBasic] = useState(false);
 
