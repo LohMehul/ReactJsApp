@@ -12,7 +12,7 @@ class ProspExample extends Component {
                     <CardCompo title="Props Title" imgSrc="https://mdbootstrap.com/img/new/standard/nature/184.webp" />
                     </div>
                     <div className="col-3"> 
-                    <CardCompo title="Product" imgSrc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA4M3ip3piTUTYow4hV-7fuXK5vNxaSsjPXeZKx5uxjg&s" />
+                    <CardCompo title="Product" imgSrc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA4M3ip3piTUTYow4hV-7fuXK5vNxaSsjPXeZKx5uxjg&s" kuchbhi= "Lorem Ipsum is simply dummy text of the." />
                     </div>
                     <div className="col-3"> 
                     <CardCompo title="Other Product" imgSrc={BikeImg} kuchbhi="data" />
