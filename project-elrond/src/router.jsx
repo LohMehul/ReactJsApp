@@ -10,7 +10,9 @@ import ImageCompo from "./ClassCompo/05Props";
 
 
 
-const ClassCompoRoute = React.lazy(()=>{ return import('./ClassCompo/ClassCompoRoute.jsx') })
+const ClassCompoRoute = React.lazy(()=>{ return import('./ClassCompo/ClassCompoRoute.jsx') }) 
+//this variable is used for lazy loading.
+// Lazy loading is a technique that enables us to load a specific component when a particular route is accessed.
 
 const MainRouter = createBrowserRouter([
     {
@@ -22,11 +24,11 @@ const MainRouter = createBrowserRouter([
         element: <><HeaderComp /><AboutPage /></>,
     },
     {
-        path: "/examples",
+        path: "/examples",   // if URL give /examples after home page or index page below mentioned Components. 
         element: <><HeaderComp/><ExampleCompo/></>,
         children: [
             {
-              path: "classcompo/*",
+              path: "classcompo/*",  // To declare lazy loading * is used.
               element: <Suspense fallback={<h2>Loading...</h2>}><ClassCompoRoute/></Suspense>,
             },
         ]
