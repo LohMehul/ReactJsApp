@@ -18,7 +18,7 @@ class ProspExample extends Component {
                     <CardCompo title="Other Product" imgSrc={BikeImg} kuchbhi= "Lorem Ipsum is simply dummy text of the."  />
                     </div>
                     <div className="col-3"> 
-                    <CardCompo title="Other Product" imgSrc={`${process.env.PUBLIC_URL}/BMWBike.jpg`} kuchbhi= "Lorem Ipsum is simply dummy text of the."  />
+                    <CardCompo title="Other Product" imgSrc={`${process.env.PUBLIC_URL}/BMWBike.jpg`} kuchbhi= "Lorem Ipsum is simply dummy text of the." isThat="hello React" />
                     </div>
                 </div>
             </>

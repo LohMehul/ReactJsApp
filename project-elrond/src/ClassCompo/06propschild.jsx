@@ -15,7 +15,7 @@ class PropsChild extends Component {
                     <MDBCardImage src={this.props.imgSrc} position='top' alt='...' />
                     <MDBCardBody>
                         <MDBCardTitle>{this.props.title}</MDBCardTitle>
-                        <MDBCardText>{this.props.kuchbhi}</MDBCardText>
+                        <MDBCardText>{this.props.kuchbhi} {this.props.isThat}</MDBCardText>
                         <MDBBtn href='#'>Button</MDBBtn>
                     </MDBCardBody>
                 </MDBCard>
