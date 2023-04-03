@@ -11,15 +11,9 @@ class ListKeysArraymap extends Component {
         })
         return (
             <div>
-                {/* test */}
                 <p>store your data in array as object </p>
                 <p>after that access that data </p>
                 {MenuItem}
-                {/* {printData}
-                {arr.forEach(element => {
-                    console.log(element); 
-                    <li>{element}</li>
-                })} */}
             </div>
         );
     }
