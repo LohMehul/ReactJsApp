@@ -5,7 +5,7 @@ class ListKeysArraymap extends Component {
     render() {
         // let arr = [12, 45, 5, 8, 4, 2]
         // let MenuData =[{"home":"Home"}]
-        let MenuData ={"/home":"Home","/about":"About"}
+        let MenuData ={"/":"Home","/about":"About"}
         // let printData = arr.forEach(element => {
         //     // console.log(element);
         //     return <li>Test</li>
