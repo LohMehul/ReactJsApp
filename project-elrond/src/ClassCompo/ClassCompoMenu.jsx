@@ -14,6 +14,7 @@ class ClassCompoIntro extends Component {
           <li><Link to="classcompostatelifecycle">Class Compo State LifeCycle</Link></li>
           <li><Link to="classcompostatelifecycleloader">Class Compo State LifeCycle Loader</Link></li>
           <li><Link to="classcompoconditionalrendering">Class Compo Conditional rendering</Link></li>
+          <li><Link to="classcompolistandkeys">Class Compo List and Keys</Link></li>
         </ul>
         <Outlet></Outlet>
       </>
