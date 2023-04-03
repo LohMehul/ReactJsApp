@@ -12,7 +12,9 @@ class ListKeysArraymap extends Component {
         return (
             <div>
                 <p>store your data in array as object </p>
-                <p>after that access that data </p>
+                <p>after that access that data  by 'map' method </p>
+                <p>to show output you have to link that key to your respective router path </p>
+                <p>link to key shows data in list element</p>
                 {MenuItem}
             </div>
         );
