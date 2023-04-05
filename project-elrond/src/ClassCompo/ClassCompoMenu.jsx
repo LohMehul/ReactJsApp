@@ -5,8 +5,8 @@ class ClassCompoIntro extends Component {
   render() {
     return (
       <>
-        <div className="row">
-          <div className="col-4">
+        <div className="row accordion-item">
+          <div className="col-4 mx-auto">
             <ul>
               <li><Link to="classcompointro">Class Compo Intro</Link></li>
               <li><Link to="classcompoconstructor">Constuctor</Link></li>
