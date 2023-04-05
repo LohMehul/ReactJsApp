@@ -11,7 +11,8 @@ class ListKeysArraymap extends Component {
         })
         return (
             <div>
-                <p>store your data in array as object </p>
+                <p>store your data in object as key : value pair</p>
+                <p>you can have also an alternative way to access data from array  </p>
                 <p>after that access that data  by 'map' method </p>
                 <p>to show output you have to link that key to your respective router path </p>
                 <p>link to key shows data in list element</p>
