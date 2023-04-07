@@ -8,6 +8,9 @@ import ExampleCompo from "./ExampleCompo";
 
 const ClassCompoRoute = React.lazy(()=>{ return import('./ClassCompo/ClassCompoRoute.jsx') })
 // const FunctionalCompoRoute = React.lazy(()=>import('./FunctionalCompo/FunctionalCompoRoute'))
+
+
+
 const MainRouter = createBrowserRouter([
     {
         path: "/",

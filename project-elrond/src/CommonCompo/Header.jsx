@@ -58,6 +58,9 @@ export default function App() {
               <Link className='nav-link' to='/images'>Images</Link>
             </MDBNavbarItem>
             <MDBNavbarItem>
+              <Link className='nav-link' to='/cart'>Cart</Link>
+            </MDBNavbarItem>
+            <MDBNavbarItem>
               <MDBDropdown>
                 <MDBDropdownToggle tag='a' className='nav-link' role='button'>
                   Dropdown

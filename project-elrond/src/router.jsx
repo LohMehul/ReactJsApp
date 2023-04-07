@@ -6,7 +6,7 @@ import AboutPage from "./AboutPage.jsx"; //import AboutPage as AboutPage , but b
 import HeaderComp from "./CommonCompo/Header.jsx"; //import header page as HeaderComp , but before import it must be exported .
 import ExampleCompo from "./ExampleCompo.jsx"; //import ExampleCompo page as ExampleCompo , but before import it must be exported .
 import ImageCompo from "./ClassCompo/05Props";
-
+import Carts from "./cart/application"
 
 
 
@@ -22,6 +22,10 @@ const MainRouter = createBrowserRouter([
     {
         path: "/about", // if URL give /about after home page or index page below mentioned Components. 
         element: <><HeaderComp /><AboutPage /></>,
+    },
+    {
+        path: "/cart", // if URL give /about after home page or index page below mentioned Components. 
+        element: <><HeaderComp /><Carts /></>,
     },
     {
         path: "/examples",   // if URL give /examples after home page or index page below mentioned Components. 
