@@ -20,8 +20,7 @@ class ClassCompoSpreadRest extends Component {
                 function myBio(firstName, lastName, ...otherInfo) &#123; <br />
                   &nbsp;&nbsp;&nbsp; return otherInfo;<br />
                 &#125;<br />
-
-                // Invoke myBio function while passing five arguments to its parameters: <br />
+                Invoke myBio function while passing five arguments to its parameters: <br />
                 myBio("Oluwatobi", "Sofela", "CodeSweetly", "Web Developer", "Male");
                 
                 <br />
