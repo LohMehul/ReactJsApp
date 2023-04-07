@@ -18,6 +18,9 @@ class ClassCompoIntro extends Component {
           <li><Link to="classcompodynamicmenu">Class Compo DropDown</Link></li>
           <li><Link to="classcomporestspread">Class Compo Spread Vs Rest</Link></li>
           <li><Link to="classcompocontrolledcompo">Class Compo ControlledCompo</Link></li>
+          <li><Link to="classcompouncontrolledcompo">Class Compo unControlledCompo</Link></li>
+          <li><Link to="classcompocompositionvsinheritance">Class Compo Composition vs Inheritance</Link></li>
+          <li><Link to="classcompocompostatelifting">Class Compo State Lifting</Link></li>
         </ul>
         <Outlet></Outlet>
       </>

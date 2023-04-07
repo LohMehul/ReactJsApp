@@ -13,6 +13,9 @@ import ClassCompoListKeysMap from './11ListKeysMap';
 import ClassCompoDynamicMenu from './12DynamicSubMenu';
 import ClassCompoSpreadRest from './13ClassCompoSpreadRest.jsx';
 import ClassCompoControlledCompo from './14ClassCompoControlledCompo.jsx';
+import ClassCompoUnControlledCompo from './15ClassCompoUnControlledCompo';
+import ClassCompoCompositionVsInheritance from './16ClassCompoCompositionVsInheritance.jsx';
+import ClassCompoStateLifting from './18ClassCompoStateLifting/mainfile.jsx';
 class ClassCompoRoute extends Component {
     render() {
         return (
@@ -31,6 +34,9 @@ class ClassCompoRoute extends Component {
                         <Route path="classcompodynamicmenu" element={<ClassCompoDynamicMenu />} />
                         <Route path="classcomporestspread" element={<ClassCompoSpreadRest />} />
                         <Route path="classcompocontrolledcompo" element={<ClassCompoControlledCompo />} />
+                        <Route path="classcompouncontrolledcompo" element={<ClassCompoUnControlledCompo />} />
+                        <Route path="classcompocompositionvsinheritance" element={<ClassCompoCompositionVsInheritance />} />
+                        <Route path="classcompocompostatelifting" element={<ClassCompoStateLifting />} />
                     </Route>
                 </Routes>
             </>
