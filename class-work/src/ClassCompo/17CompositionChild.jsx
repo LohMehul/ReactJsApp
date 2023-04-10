@@ -6,8 +6,6 @@ class CompositionChild extends Component {
             <div>
                 <p>Child compo</p>
                 This is parent compo data : {this.props.data}
-
-
                 {this.props.children}
                 <br />
                 <br />
