@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import CompositionChild from './17CompositionChild.jsx';
 
+//composition in React js means accessing child components data into parent component 
+//you can access child's data into parent using props but it can not support group of html tags
+// in html group tags multiple tags as h1, p, div , br you can access in to parent components
 class ClassCompoCompositionVsInheritance extends Component {
     render() {
         return (
