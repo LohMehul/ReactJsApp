@@ -11,7 +11,7 @@ const ExampleCompo = () => {
                 <h2 className='text-center'>Example Component</h2>
             </div>
         </div>
-        <ClassAndFunctionCompo/>
+        <ClassAndFunctionCompo/>    {/*this component redirects to class and function components */}
         </div>
     );
 };
