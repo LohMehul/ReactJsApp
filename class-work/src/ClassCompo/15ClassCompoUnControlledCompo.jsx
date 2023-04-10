@@ -5,7 +5,7 @@ class ClassCompoControlledCompo extends Component {
         super();
         this.usernameinp = React.createRef();
         this.inpRef =React.createRef();
-        this.inpPassRef =React.createRef();
+        this.inpPassRef =React.createRef(); //create Ref to use Uncntrolled Component
     }
     submitdata=(event)=>{  
         event.preventDefault();
