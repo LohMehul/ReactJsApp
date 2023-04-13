@@ -3,6 +3,7 @@ import {createBrowserRouter} from 'react-router-dom';
 import Header from "./CommonCompo/Header"
 import AboutUs from "./Compo/about"
 
+// const 
 const router = createBrowserRouter([
     {
         path: "/",
