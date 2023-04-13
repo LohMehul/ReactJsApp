@@ -7,7 +7,6 @@ import {
     MDBIcon,
     MDBNavbarNav,
     MDBNavbarItem,
-    MDBNavbarLink,
     MDBBtn,
     MDBDropdown,
     MDBDropdownToggle,
