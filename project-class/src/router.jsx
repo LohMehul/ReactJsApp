@@ -2,7 +2,7 @@ import React from 'react';
 import {createBrowserRouter} from 'react-router-dom';
 import Header from "./CommonCompo/Header"
 import AboutUs from "./Compo/about"
-
+import Topics from "./Compo/topics.jsx"
 // const 
 const router = createBrowserRouter([
     {
@@ -15,7 +15,7 @@ const router = createBrowserRouter([
     },
     {
         path: "/topics",
-        element: <><Header/> <AboutUs/></>,
+        element: <><Header/> <Topics/></>,
     },
     {
         path: "/examples",
