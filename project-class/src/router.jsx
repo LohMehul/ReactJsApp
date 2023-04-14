@@ -3,7 +3,7 @@ import {createBrowserRouter} from 'react-router-dom';
 import Header from "./CommonCompo/Header"
 import AboutUs from "./Compo/about"
 import Topics from "./Compo/topics.jsx"
-// const 
+import Examples from "./Compo/Examples.jsx"
 const router = createBrowserRouter([
     {
         path: "/",
@@ -19,7 +19,7 @@ const router = createBrowserRouter([
     },
     {
         path: "/examples",
-        element: <><Header/> <AboutUs/></>,
+        element: <><Header/> <Examples/></>,
     },
 ]);
 
