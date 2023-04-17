@@ -10,10 +10,12 @@ const HomePage = () => {
                     <Link to="classcompo">
                         <h3 className='text-center'>Class Component</h3>
                     </Link>
-                    
+
                 </div>
                 <div className="col">
-                    <h3 className='text-center'>Functional Component</h3>
+                    <Link to="functionalcompo">
+                        <h3 className='text-center'>Functional Component</h3>
+                    </Link>
                 </div>
             </div>
             <Outlet></Outlet>

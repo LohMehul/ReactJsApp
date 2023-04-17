@@ -7,6 +7,7 @@ import HeaderComp from "./CommonCompo/Header";
 import ExampleCompo from "./ExampleCompo";
 
 const ClassCompoRoute = React.lazy(()=>{ return import('./ClassCompo/ClassCompoRoute.jsx') })
+const FunctionalCompoRoute = React.lazy(()=>{ return import('./FunctionalCompo/FunctionalCompoRoute.jsx') })    
 // const FunctionalCompoRoute = React.lazy(()=>import('./FunctionalCompo/FunctionalCompoRoute'))
 
 
@@ -31,7 +32,10 @@ const MainRouter = createBrowserRouter([
             {
               path: "classcompo/*",
               element: <Suspense fallback={<h2>Loading...</h2>}><ClassCompoRoute/></Suspense>,
-            },
+            },{
+                path: "functionalcompo/*",
+                element: <Suspense fallback={<h2>Loading...</h2>}><FunctionalCompoRoute/></Suspense>,
+              },
         ]
     },
 ]);
