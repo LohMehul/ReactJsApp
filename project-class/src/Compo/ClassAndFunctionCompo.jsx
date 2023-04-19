@@ -7,7 +7,7 @@ const ClassAndFunctionCompo = () => {
 
                 <div className="row mt-1">
                     <div className="col">
-                        <Link to="#">
+                        <Link to="classcompo">
                             <h3 className='text-center'>Class Component</h3>
                         </Link>
 
