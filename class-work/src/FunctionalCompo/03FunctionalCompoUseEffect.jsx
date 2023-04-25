@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from 'react';
 
 const FunctionalCompoUseEffect = () => {
-    const [stateNameAnything,aajebiju] = useState(true)
-    useEffect(()=>{
+    const [stateNameAnything, aajebiju] = useState(true)
+    useEffect(() => {
         console.log("called");
     })
-    const BtnClicked = ()=> {
+    const BtnClicked = () => {
         console.log("BtnClicked");
         aajebiju(!stateNameAnything)
     }
     return (
         <>
-          <p>UseEffect Hook</p>  
-          <button onClick={BtnClicked}>Click</button>
+            <p>UseEffect Hook</p>
+            <button onClick={BtnClicked}>Click</button>
         </>
     );
 };

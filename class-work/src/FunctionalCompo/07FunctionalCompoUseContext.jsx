@@ -11,17 +11,17 @@ const FunctionalCompoUseContext = () => {
         <>
             {JSON.stringify(theme)}
             <ThemeContext.Provider value={theme}>
-            <Form />
-            <label>
-                <input
-                    type="checkbox"
-                    checked={theme === 'dark'}
-                    onChange={(e) => {
-                        setTheme(e.target.checked ? 'dark' : 'light')
-                    }}
-                />
-                Use dark mode
-            </label>
+                <Form />
+                <label>
+                    <input
+                        type="checkbox"
+                        checked={theme === 'dark'}
+                        onChange={(e) => {
+                            setTheme(e.target.checked ? 'dark' : 'light')
+                        }}
+                    />
+                    Use dark mode
+                </label>
             </ThemeContext.Provider>
         </>
     );
