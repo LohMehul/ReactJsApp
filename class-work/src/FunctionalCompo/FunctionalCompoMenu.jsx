@@ -9,6 +9,7 @@ const FunctionalCompoMenu = () => {
                         <li><Link to="functionalcompointro">Functional Compo Intro</Link></li>
                         <li><Link to="functionalcompostate">Functional Compo State</Link></li>
                         <li><Link to="functionalcompouseeffect">Functional Compo UseEffect</Link></li>
+                        <li><Link to="functionalcompousecontext">Functional Compo UseContext</Link></li>
                     </ul>
 
                 </div>
