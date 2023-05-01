@@ -8,15 +8,18 @@ class ClassCompoIntro extends Component {
         <div className="row accordion-item">
           <div className="col-4 mx-auto">
             <ul>
-              <li><Link to="classcompointro">Class Compo Intro</Link></li>
-              <li><Link to="classcompoconstructor">Constuctor</Link></li>
-              <li><Link to="classcompostate">State In Class Compo</Link></li>
-              <li><Link to="classcompojsx">JSX In Class Compo</Link></li>
-              <li><Link to="classcompoporps">Class Compo Props</Link></li>
-              <li><Link to="classcompostatelifecycle">Class Compo State LifeCycle</Link></li>
-              <li><Link to="classcompostatelifecycleloader">Class Compo State LifeCycle Loader</Link></li>
-              <li><Link to="classcompoconditionalrendering">Class Compo Conditional rendering</Link></li>
-              <li><Link to="classcompolistandkeys">Class Compo List and Keys</Link></li>
+              <li><Link to="classcompointro">What is React Js ? </Link></li>
+              <li><Link to="classcompoconstructor">What is NPM in React Js ? </Link></li>
+              <li><Link to="classcompostate">What is Role of Node Js in react Js ? </Link></li>
+              <li><Link to="classcompostate">What is CLI command In React Js ? </Link></li>
+              <li><Link to="classcompostate">What is Components in React Js? </Link></li>
+              <li><Link to="classcompostate">What is Header and Content Components in React Js? </Link></li>
+              <li><Link to="classcompostate">How to install React Js on Windows, Linux Operating System? </Link></li>
+              <li><Link to="classcompostate">How to install NPM and How to check version of NPM? </Link></li>
+              <li><Link to="classcompostate">How to check version of React Js ? </Link></li>
+              <li><Link to="classcompostate">How to change in components of React Js ? </Link></li>
+              <li><Link to="classcompostate">How to Create a List View in React Js ? </Link></li>
+
             </ul>
           </div>
           <div className="col-8 ">

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import ClassCompoMenu from './ClassCompoMenu';
+import ClassCompoMenu from './StateCompoMenu';
 // import WelcomeToClassCompo from './01WelcomeToClassCompo.jsx';
 // import ClassCompoConstructor from './02ClassCompoConstructor.jsx';
 // import ClassCompoState from './03ClassCompoState.jsx';
