@@ -1,7 +1,7 @@
 import React,   {Suspense} from 'react';
 import {createBrowserRouter} from 'react-router-dom';
 import Header from "./CommonCompo/Header"
-import AboutUs from "./Compo/about"
+import AboutUs from "./Compo/components"
 import Topics from "./Compo/topics.jsx"
 import Examples from "./ExampleCompo"
 
@@ -14,7 +14,7 @@ const router = createBrowserRouter([
         element:<Header/>,
     },
     {
-        path: "/about",
+        path: "/components",
         element: <><Header/> <AboutUs/></>,
     },
     {
