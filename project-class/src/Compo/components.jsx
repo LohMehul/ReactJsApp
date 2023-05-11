@@ -17,26 +17,29 @@ class About extends Component {
                         <MDBAccordionItem className='text-dark' collapseId={3} headerTitle='What is Role of Node Js in react Js ?'>
                         NodeJS is a framework of JavaScript which is mainly used for working with the backend of our application or building the backend using JavaScript, whereas ReactJS is a JavaScript front-end library. It is mainly used for building the user interface or the frontend of our application.
                         </MDBAccordionItem>
-                        <MDBAccordionItem className='text-dark' collapseId={4} headerTitle='Accordion Item #4'>
-                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
-                            plugin adds the appropriate classes that we use to style each element. These classes control the overall
-                            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
-                            custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
-                            within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        <MDBAccordionItem className='text-dark' collapseId={4} headerTitle='What is CLI command In React Js ?'>
+                        Command-line interfaces (CLIs) built-in Node. js authorize automating repetitive tasks while leveraging the Node. js ecosystem. Package managers like npm and yarn are distributed and ingested across multiple platforms. The Nodejs Commander package is an excellent utility for creating a CLI with NodeJS.
                         </MDBAccordionItem>
-                        <MDBAccordionItem className='text-dark' collapseId={5} headerTitle='Accordion Item #5'>
-                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
-                            plugin adds the appropriate classes that we use to style each element. These classes control the overall
-                            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
-                            custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
-                            within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        <MDBAccordionItem className='text-dark' collapseId={5} headerTitle='What is Components in React Js?'>
+                        Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML. Components come in two types, Class components and Function components, in this tutorial we will concentrate on Function components.
                         </MDBAccordionItem>
-                        <MDBAccordionItem className='text-dark' collapseId={6} headerTitle='topics'>
-                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
-                            plugin adds the appropriate classes that we use to style each element. These classes control the overall
-                            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
-                            custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
-                            within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        <MDBAccordionItem className='text-dark' collapseId={6} headerTitle='What is Header and Content Components in React Js?'>
+                        Headers are compositions that extend standard navbar functionalities. They contain additional components like a jumbotron, sub-navbar, or image covers which serve as a containers for extra navigation elements - usually links, forms, or call-to-action buttons.
+                        </MDBAccordionItem>
+                        <MDBAccordionItem className='text-dark' collapseId={7} headerTitle='What is Header and Content Components in React Js?'>
+                        Headers are compositions that extend standard navbar functionalities. They contain additional components like a jumbotron, sub-navbar, or image covers which serve as a containers for extra navigation elements - usually links, forms, or call-to-action buttons.
+                        </MDBAccordionItem>
+                        <MDBAccordionItem className='text-dark' collapseId={8} headerTitle='What is Header and Content Components in React Js?'>
+                        Headers are compositions that extend standard navbar functionalities. They contain additional components like a jumbotron, sub-navbar, or image covers which serve as a containers for extra navigation elements - usually links, forms, or call-to-action buttons.
+                        </MDBAccordionItem>
+                        <MDBAccordionItem className='text-dark' collapseId={9} headerTitle='What is Header and Content Components in React Js?'>
+                        Headers are compositions that extend standard navbar functionalities. They contain additional components like a jumbotron, sub-navbar, or image covers which serve as a containers for extra navigation elements - usually links, forms, or call-to-action buttons.
+                        </MDBAccordionItem>
+                        <MDBAccordionItem className='text-dark' collapseId={10} headerTitle='What is Header and Content Components in React Js?'>
+                        Headers are compositions that extend standard navbar functionalities. They contain additional components like a jumbotron, sub-navbar, or image covers which serve as a containers for extra navigation elements - usually links, forms, or call-to-action buttons.
+                        </MDBAccordionItem>
+                        <MDBAccordionItem className='text-dark' collapseId={11} headerTitle='What is Header and Content Components in React Js?'>
+                        Headers are compositions that extend standard navbar functionalities. They contain additional components like a jumbotron, sub-navbar, or image covers which serve as a containers for extra navigation elements - usually links, forms, or call-to-action buttons.
                         </MDBAccordionItem>
                     </MDBAccordion>
                 </div>
