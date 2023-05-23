@@ -1,40 +1,24 @@
 {
-  "employees": [
+  "posts": [
     {
-      "id": 1,
-      "first_name": "Sebastian",
-      "last_name": "Eschweiler",
-      "email": "sebastian@codingthesmartway.com"
+      "title": "JSON SERVER",
+      "author": "foo",
+      "id": 1
     },
     {
-      "id": 2,
-      "first_name": "Steve",
-      "last_name": "Palmer",
-      "email": "steve@codingthesmartway.com"
+      "title": "REACT",
+      "author": "facebook",
+      "id": 2
     },
     {
-      "id": 3,
-      "first_name": "Ann",
-      "last_name": "Smith",
-      "email": "ann@codingthesmartway.com"
+      "title": "BOOTSTRAP",
+      "author": "css master",
+      "id": 3
     },
     {
-      "id": 4,
-      "first_name": "anna",
-      "last_name": "watson",
-      "email": "anna@codingthesmartway.com"
-    },
-    {
-      "id": 7,
-      "first_name": "anna-de",
-      "last_name": "armas",
-      "email": "annade@mail.com"
-    },
-    {
-      "id": 5,
-      "first_name": "ABC",
-      "last_name": "XYZ",
-      "email": "abc@mail.com"
+      "title": "MEDIUM",
+      "author": "medium",
+      "id": 4
     }
   ]
 }
