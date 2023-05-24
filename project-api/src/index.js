@@ -5,7 +5,7 @@ import RootRouter from './router';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import './custom.css';
-import 'animate.css';
+// import 'animate.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render("Testing");
