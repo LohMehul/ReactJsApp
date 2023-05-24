@@ -28,7 +28,7 @@ import CustomHook from './../Hooks/customHook';
 const LoginCompoent = () => {
   const HooksData = CustomHook({}, { usernameError: "" });
   const navigate = useNavigate();
-  const { handleChange, inp, errors } = CustomHook({}, { usernameError: "" });
+  const { handleChange, inp, errors } = CustomHook({roll:2}, { usernameError: "" });
   // console.log(handleChange);
   const [ActiveClass, setActiveClass] = useState(false);
   const toggleForm = () => {
@@ -40,20 +40,21 @@ const LoginCompoent = () => {
     fetch(`https://jayramin.000webhostapp.com/loginget?username=${inp.username}&password=${inp.password}`).then((res) => res.json()).then((result) => {
       console.log(result);
     })
+    console.log("save data values");
   }
   const registration = (event) => {
     event.preventDefault();
-    console.log("save data", inp);
+    console.log("save data", inp); 
     // fetch("http://localhost/API/registration", {
-    fetch("http://localhost:5000/users", {
+    fetch("http://localhost:5000/posts", {
       method: "POST", // *GET, POST, PUT, DELETE, etc.
-      mode: "no-cors", // no-cors, *cors, same-origin
+      // mode: "no-cors", // no-cors, *cors, same-origin
       // cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
       // headers: {
       //   "Content-Type": "application/json",
       //   // 'Content-Type': 'application/x-www-form-urlencoded',
       // },
-      body: JSON.stringify(inp)
+      // body: JSON.stringify(inp)
     }).then((res) => res.json()).then((result) => {
       console.log(result);
       navigate("/login")
