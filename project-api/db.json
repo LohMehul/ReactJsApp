@@ -4,6 +4,11 @@
       "id": 1,
       "title": "json-server",
       "author": "typicode"
+    },
+    {
+      "username": "abc",
+      "password": "1123",
+      "id": 2
     }
   ],
   "comments": [
