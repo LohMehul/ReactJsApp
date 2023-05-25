@@ -68,8 +68,15 @@
     {
       "username": "test",
       "password": "123",
-      "role": 2,
+      "roll": 2,
       "id": 8
+    },
+    {
+      "roll": 2,
+      "username": "test1",
+      "email": "test1@mail.com",
+      "password": "123",
+      "id": 9
     }
   ]
 }
