@@ -77,6 +77,20 @@
       "email": "test1@mail.com",
       "password": "123",
       "id": 9
+    },
+    {
+      "roll": 2,
+      "username": "test3",
+      "email": "test3@mail.com",
+      "password": "123",
+      "id": 10
+    },
+    {
+      "roll": 2,
+      "username": "test3",
+      "email": "test3@mail.com",
+      "password": "123",
+      "id": 11
     }
   ]
 }

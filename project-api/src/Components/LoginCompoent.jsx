@@ -88,10 +88,10 @@ const LoginCompoent = () => {
     //   method: "POST", // *GET, POST, PUT, DELETE, etc.
     //   // mode: "no-cors", // no-cors, *cors, same-origin
     //   // cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-    //   // headers: {
-    //   //   "Content-Type": "application/json",
-    //   //   // 'Content-Type': 'application/x-www-form-urlencoded',
-    //   // },
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //     // 'Content-Type': 'application/x-www-form-urlencoded',
+    //   },
     //   body: JSON.stringify("sting",inp)
     // }).then((res) => res.json()).then((result) => {
     //   console.log("result",result);
@@ -103,8 +103,7 @@ const LoginCompoent = () => {
         'Content-Type': 'application/json'
     },
     body: JSON.stringify(inp)
-})
-   .then(response =>{navigate("/login");console.log(response);})
+}).then(response =>{navigate("/login");console.log(response);})
    
 // output: 200
     // fetch(`https://jayramin.000webhostapp.com/loginget?username=${inp.username}&password=${inp.password}`).then((res) => res.json()).then((result) => {
