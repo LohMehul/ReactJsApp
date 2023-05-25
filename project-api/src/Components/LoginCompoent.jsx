@@ -1,23 +1,23 @@
 import react, { useState } from 'react';
-import {
-  MDBContainer,
-  MDBRow,
-  MDBCard,
-  MDBCardHeader,
-  MDBCol,
-  MDBCardBody,
-  MDBTabs,
-  MDBTabsItem,
-  MDBTabsLink,
-  MDBTabsPane,
-  MDBTabsContent,
-  MDBIcon,
-  MDBCheckbox,
-  MDBInput,
-  MDBBtn,
-  MDBTextArea,
-  MDBNavbarLink,
-} from 'mdb-react-ui-kit';
+// import {
+//   MDBContainer,
+//   MDBRow,
+//   MDBCard,
+//   MDBCardHeader,
+//   MDBCol,
+//   MDBCardBody,
+//   MDBTabs,
+//   MDBTabsItem,
+//   MDBTabsLink,
+//   MDBTabsPane,
+//   MDBTabsContent,
+//   MDBIcon,
+//   MDBCheckbox,
+//   MDBInput,
+//   MDBBtn,
+//   MDBTextArea,
+//   MDBNavbarLink,
+// } from 'mdb-react-ui-kit';
 // import RegistetComponent from "./RegistetComponent.jsx"
 // import './../LoginRegistration.css';
 import './../LoginRegistration.css';
@@ -26,39 +26,54 @@ import CustomHook from './../Hooks/customHook';
 
 
 const LoginCompoent = () => {
-  const HooksData = CustomHook({}, { usernameError: "" });
+  // const HooksData = CustomHook({}, { usernameError: "" });
   const navigate = useNavigate();
-  const { handleChange, inp, errors } = CustomHook({roll:2}, { usernameError: "" });
-  // console.log(handleChange);
+  const { handleChange, inp, errors } = CustomHook({ roll: 2 }, { usernameError: "" });
+  console.log(handleChange);
   const [ActiveClass, setActiveClass] = useState(false);
   const toggleForm = () => {
     setActiveClass(!ActiveClass);
   }
   const savedata = (event) => {
     event.preventDefault();
-    console.log("save data", inp);
-    fetch(`https://jayramin.000webhostapp.com/loginget?username=${inp.username}&password=${inp.password}`).then((res) => res.json()).then((result) => {
-      console.log(result);
+    // console.log("inp data", inp);
+    fetch("http://localhost:5000/users").then((res) => res.json()).then((result) => {
+      // console.log("savedata", result);
+      // if () {
+      //         console.log("data show");       
+      // } else {
+      //   console.log("user not found ");
+      // }
     })
-    console.log("save data values");
+    // console.log("save data values");
   }
   const registration = (event) => {
     event.preventDefault();
-    console.log("save data", inp); 
+    console.log("registration data", inp);
     // fetch("http://localhost/API/registration", {
-    fetch("http://localhost:5000/posts", {
-      method: "POST", // *GET, POST, PUT, DELETE, etc.
-      // mode: "no-cors", // no-cors, *cors, same-origin
-      // cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-      // headers: {
-      //   "Content-Type": "application/json",
-      //   // 'Content-Type': 'application/x-www-form-urlencoded',
-      // },
-      // body: JSON.stringify(inp)
-    }).then((res) => res.json()).then((result) => {
-      console.log(result);
-      navigate("/login")
-    })
+    // fetch("http://localhost:5000/users", {
+    //   method: "POST", // *GET, POST, PUT, DELETE, etc.
+    //   // mode: "no-cors", // no-cors, *cors, same-origin
+    //   // cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+    //   // headers: {
+    //   //   "Content-Type": "application/json",
+    //   //   // 'Content-Type': 'application/x-www-form-urlencoded',
+    //   // },
+    //   body: JSON.stringify("sting",inp)
+    // }).then((res) => res.json()).then((result) => {
+    //   console.log("result",result);
+    //   navigate("/login");
+    // })
+    fetch('http://localhost:5000/users', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(inp)
+})
+   .then(response =>{navigate("/login");console.log(response);})
+   
+// output: 200
     // fetch(`https://jayramin.000webhostapp.com/loginget?username=${inp.username}&password=${inp.password}`).then((res) => res.json()).then((result) => {
     //   console.log(result);
     // })
@@ -92,12 +107,13 @@ const LoginCompoent = () => {
               <form method='post' onSubmit={registration}>
                 <h2>Create an account</h2>
                 <input type="text" onBlur={handleChange} name="username" placeholder="Username" />
-                <input type="email" name="email" onBlur={handleChange}  placeholder="Email Address" />
-                <input type="password" name="password" onBlur={handleChange}  placeholder="Create Password" />
+                <input type="email" name="email" onBlur={handleChange} placeholder="Email Address" />
+                <input type="password" name="password" onBlur={handleChange} placeholder="Create Password" />
                 <input type="password" name="" placeholder="Confirm Password" />
                 <input type="submit" name="" value="Sign Up" />
                 <p className="signup">
                   Already have an account ?
+                {/* {JSON.stringify(inp)} */}
                   <a href="#" onClick={toggleForm}>Sign in.</a>
                 </p>
               </form>

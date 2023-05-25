@@ -50,6 +50,27 @@
     },
     {
       "id": 13
+    },
+    {
+      "username": "abc",
+      "password": "1123",
+      "email": "ABS@mail.com",
+      "id": 14
+    },
+    {
+      "id": 15
+    },
+    {
+      "id": 16
+    },
+    {
+      "id": 17
+    },
+    {
+      "id": 18
+    },
+    {
+      "id": 19
     }
   ],
   "comments": [
@@ -61,5 +82,56 @@
   ],
   "profile": {
     "name": "typicode"
-  }
+  },
+  "users": [
+    {
+      "username": "test1705",
+      "password": "1705",
+      "email": "test@mail",
+      "role": 1,
+      "id": 5
+    },
+    {
+      "username": "test1705",
+      "password": "1705",
+      "email": "test@mail",
+      "role": 2,
+      "id": 6
+    },
+    {
+      "username": "may19",
+      "email": "may19@mail.com",
+      "password": "123",
+      "role": 2,
+      "id": 7
+    },
+    {
+      "roll": 2,
+      "username": "gdfgdfgdgdg",
+      "email": "fbfdg@fhsifsf.com",
+      "password": "123",
+      "id": 25
+    },
+    {
+      "roll": 2,
+      "username": "test1",
+      "email": "test1@mail.com",
+      "password": "123",
+      "id": 26
+    },
+    {
+      "roll": 2,
+      "username": "test2",
+      "email": "test2@mail.com",
+      "password": "test2",
+      "id": 27
+    },
+    {
+      "roll": 2,
+      "username": "test3",
+      "password": "123",
+      "email": "test3@mail.com",
+      "id": 28
+    }
+  ]
 }

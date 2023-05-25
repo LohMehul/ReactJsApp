@@ -13,7 +13,7 @@ const ApiExample = () => {
     const FetchAllUsersData = async () => {
         // const response = await fetch("http://justjayapi.000webhostapp.com/allusers").then((res) => res.json()).then((result) => {
         const response = await fetch("https://jayramin.000webhostapp.com/allusers").then((res) => res.json()).then((result) => {
-            console.log(result);
+            // console.log(result);
             setData(result)
             setLoading(true)
             // return response
@@ -26,6 +26,7 @@ const ApiExample = () => {
         //     console.log("key is ",key);
         //    return <li key={key}>{value.username}</li>
         // })
+        console.log(data.Msg);
         MenuData = Object.entries(data.Data).map((res) => {
             console.log("value is ",res);
             // console.log("key is ",key);
@@ -40,6 +41,7 @@ const ApiExample = () => {
         <>
             {/* {JSON.stringify(data)} */}
             {/* anything */}
+            {/* <li>{data.Msg}</li> */}
             {MenuData}
         </>
     );
