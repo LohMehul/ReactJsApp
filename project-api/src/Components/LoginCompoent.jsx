@@ -23,6 +23,7 @@ import react, { useState } from 'react';
 import './../LoginRegistration.css';
 import { Link, useNavigate } from 'react-router-dom';
 import CustomHook from './../Hooks/customHook';
+import axios from 'axios';
 
 
 const LoginCompoent = () => {
@@ -31,21 +32,53 @@ const LoginCompoent = () => {
   const { handleChange, inp, errors } = CustomHook({ roll: 2 }, { usernameError: "" });
   console.log(handleChange);
   const [ActiveClass, setActiveClass] = useState(false);
+  const [errorMsg, setErrorMsg] = useState(false);
   const toggleForm = () => {
     setActiveClass(!ActiveClass);
   }
-  const savedata = (event) => {
+  const savedata = async (event) => {
     event.preventDefault();
-    // console.log("inp data", inp);
-    fetch("http://localhost:5000/users").then((res) => res.json()).then((result) => {
-      // console.log("savedata", result);
-      // if () {
-      //         console.log("data show");       
-      // } else {
-      //   console.log("user not found ");
-      // }
-    })
-    // console.log("save data values");
+    // console.log("save data", inp);
+    // fetch(`https://jayramin.000webhostapp.com/loginget?username=${inp.username}&password=${inp.password}`).then((res) => res.json()).then((result) => {
+    // console.log(result);
+    // })
+    // axios.post("http://localhost:5000/users", {
+    //   username: inp.username,
+    //   password: inp.password
+    // })
+    // .then((response) => {
+    //   console.log(response);
+    // });
+    try {
+      const response = await axios.get(`http://localhost:5000/users?username=${inp.username}&password=${inp.password}`)
+        .then((response) => {
+          console.log(response);
+          if (response.status == 200) {
+            console.log("server connected",response.data);
+            console.log("server connected",response.data[0].role);
+            if (response.data[0].role == 1) {
+              navigate("/admindashboard")
+            } else {
+              navigate("/userdashboard")
+            }
+          } else {
+            console.log("error while connecting to the server");
+          }
+        }).catch((error) => {
+            console.log("inside catch",error);
+            setErrorMsg(true)
+          if (error.response) {
+            console.log(error.response);
+            console.log("server responded");
+          } else if (error.request) {
+            console.log("network error");
+          } else {
+            console.log(error);
+          }
+        });
+    } catch (error) {
+      console.log(error);
+    }
   }
   const registration = (event) => {
     event.preventDefault();
