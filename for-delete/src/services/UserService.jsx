@@ -5,7 +5,6 @@ const getAll = () =>{
 }
 
 const UserService = {
-    getAll,
-    login
+    getAll
 }
 export default UserService;
