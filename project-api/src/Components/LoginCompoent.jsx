@@ -54,7 +54,7 @@ const LoginCompoent = () => {
         .then((response) => {
           console.log(response);
           if (response.status == 200) {
-            console.log("server connected",response.data);
+            // console.log("server connected",response.data);
             console.log("server connected",response.data[0].role);
             if (response.data[0].role == 1) {
               navigate("/admindashboard")
@@ -120,8 +120,8 @@ const LoginCompoent = () => {
             <div className="formBx">
               <form method='post' onSubmit={savedata}>
                 <h2>Sign In</h2>
-                {JSON.stringify(inp)}
-                {JSON.stringify(errors)}
+                {/* {JSON.stringify(inp)} */}
+                {/* {JSON.stringify(errors)} */}
                 <input type="text" className='required' onBlur={handleChange} name="username" placeholder="Username" />
                 {errors.usernameError ? <span>This field is Required</span> : <></>}
                 <input type="password" onBlur={handleChange} name="password" placeholder="Password" />
