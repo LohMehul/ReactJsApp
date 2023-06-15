@@ -5,7 +5,7 @@ import {
     MDBIcon,
     MDBNavbarNav,
     MDBNavbarItem,
-    MDBNavbarLink,
+    // MDBNavbarLink,
     MDBNavbarToggler,
     MDBNavbarBrand,
     MDBCollapse
@@ -13,7 +13,7 @@ import {
 import { Link } from 'react-router-dom';
 const Headerfile = () => {
     const [showNavColorSecond, setShowNavColorSecond] = useState(false);
-    const MenuObject = { "/home": "Home", "/about": "About us", "/pricing": "Pricing","/features":"Features", "/login": "Singin" ,"/accessstore":"Access Store Data"}
+    const MenuObject = { "/home": "Home", "/login": "Singin" ,"/accessstore":"Access Store Data"}
     // let content = MenuObject.map((data, key) => {
     let content = Object.entries(MenuObject).map((data, key) => {
         return <MDBNavbarItem key={key}>

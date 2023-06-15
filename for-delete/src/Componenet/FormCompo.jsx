@@ -3,7 +3,7 @@ import React from 'react';
 const FormCompo = () => {
     return (
         <>
-          Form / input / other  
+          Form / input / other <br /> 
         </>
     );
 };
