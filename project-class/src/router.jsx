@@ -6,6 +6,7 @@ import AboutUs from "./Compo/components"
 import LifeCycle from "./Compo/topics.jsx"
 import Examples from "./ExampleCompo"
 import ClassLifeCycle from "./Compo/classlifecycle.jsx"
+import FuncLifeClass from "./Compo/funclifecycle.jsx"
 const ClassCompoRoute = React.lazy(() => { return import('./ClassCompo/ClassCompoRoute.jsx') })
 const StateCompoRoute = React.lazy(() => { return import('./StateCompo/StateCompoRoute.jsx') })
 const PropsCompoRoute = React.lazy(() => { return import('./PropsCompo/PropsCompoRoute.jsx') })
@@ -28,7 +29,7 @@ const router = createBrowserRouter([
       },
       {
         path: "funclifecycle",  // To declare lazy loading * is used.
-        element: <StateCompoRoute />,
+        element: <FuncLifeClass />,
       },]
   },
 
