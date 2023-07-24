@@ -11,7 +11,7 @@ const ExampleCompo = () => {
                 <h2 className='text-center'>React - Components, State, Props Assignment</h2>
             </div>
         </div>
-        <ClassAndFunctionCompo/>    {/*this component redirects to class and function components */}
+        <ClassAndFunctionCompo/> 
         </div>
     );
 };
