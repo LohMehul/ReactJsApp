@@ -8,10 +8,6 @@ import {
     MDBNavbarNav,
     MDBNavbarItem,
     MDBBtn,
-    MDBDropdown,
-    MDBDropdownToggle,
-    MDBDropdownMenu,
-    MDBDropdownItem,
     MDBCollapse,
 } from 'mdb-react-ui-kit';
 import {Link} from "react-router-dom";
