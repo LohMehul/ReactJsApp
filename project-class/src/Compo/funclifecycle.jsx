@@ -1,35 +1,22 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 
-// const funclifecycle = () => {
-//     useEffect(() => {
-//         const intervalId = setInterval(() => {
-//         document.title = `Time is: ${new Date()}`;
-//         }, 1000);
-//         return () => {
-//           document.title = "Time stopped.";
-//           clearInterval(intervalId);
-//         }
-//       }, []);
-     
-//       return <h1>What time is it?</h1>;
-// };
+function Example() {
+  const [count, setCount] = useState(0);
 
-// export default funclifecycle;
-
- 
-const Component = () => {
+  // Similar to componentDidMount and componentDidUpdate:
   useEffect(() => {
-    const intervalId = setInterval(() => {
-      document.title = `Time is: ${new Date()}`;
-    }, 1);
- 
-    return () => {
-      document.title = "Time stopped.";
-      clearInterval(intervalId);
-    }
-  }, []);
- 
-  return <h1>What time is it?</h1>;
-};
+    // Update the document title using the browser API
+    document.title = `You clicked ${count} times`;
+  });
 
-export default Component;
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>
+        Click me
+      </button>
+    </div>
+  );
+}
+
+export default Example ;
