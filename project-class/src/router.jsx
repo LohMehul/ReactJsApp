@@ -1,7 +1,7 @@
 import React, { Suspense } from 'react';
 import { createBrowserRouter } from 'react-router-dom';
 import Header from "./CommonCompo/Header"
-// import Home from "./Compo/home.jsx"
+import Home from "./Compo/home.jsx"
 import AboutUs from "./Compo/components"
 import LifeCycle from "./Compo/topics.jsx"
 import Examples from "./ExampleCompo"
@@ -13,7 +13,7 @@ const PropsCompoRoute = React.lazy(() => { return import('./PropsCompo/PropsComp
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <><Header /></>,
+    element: <><Header/><Home/></>,
   },
   {
     path: "/components",
