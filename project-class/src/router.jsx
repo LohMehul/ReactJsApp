@@ -7,6 +7,7 @@ import LifeCycle from "./Compo/topics.jsx"
 import Examples from "./ExampleCompo"
 import ClassLifeCycle from "./Compo/classlifecycle.jsx"
 import FuncLifeClass from "./Compo/funclifecycle.jsx"
+import Styling from './Compo/Styling';
 const ClassCompoRoute = React.lazy(() => { return import('./ClassCompo/ClassCompoRoute.jsx') })
 const StateCompoRoute = React.lazy(() => { return import('./StateCompo/StateCompoRoute.jsx') })
 const PropsCompoRoute = React.lazy(() => { return import('./PropsCompo/PropsCompoRoute.jsx') })
@@ -32,7 +33,6 @@ const router = createBrowserRouter([
         element: <FuncLifeClass />,
       },]
   },
-
   {
     path: "/examples",   // if URL give /examples after home page or index page below mentioned Components. 
     element: <><Header /> <Examples /></>,
@@ -50,6 +50,10 @@ const router = createBrowserRouter([
         element: <Suspense fallback={<h2>Loading...</h2>}><PropsCompoRoute /></Suspense>,
       },
     ]
+  },
+  {
+    path: "/styling",
+    element: <><Header /> <Styling /></>,
   },
 ]);
 

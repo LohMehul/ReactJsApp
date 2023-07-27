@@ -18,6 +18,9 @@ const home = () => {
                         <li>
                             <Link className='link' to="/lifecycle"> LifeCycle</Link>
                         </li>
+                        <li>
+                            <Link className='link' to="/styling"> styling & Adv. React</Link>
+                        </li>
                     </ul>
                 </div>
             </div>

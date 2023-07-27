@@ -19,7 +19,7 @@ export default function     App() {
     return (
         <MDBNavbar className='' expand='lg' light bgColor=''>
             <MDBContainer className='container'>
-                <MDBNavbarBrand href='#'>Brand</MDBNavbarBrand>
+                <MDBNavbarBrand href='#' style={{fontSize:"50px",color:"blue" }}><i class="fa-brands fa-react"></i></MDBNavbarBrand>
 
                 <MDBNavbarToggler
                     aria-controls='navbarSupportedContent'
@@ -33,12 +33,12 @@ export default function     App() {
                 <MDBCollapse navbar show={showBasic}>
                     <MDBNavbarNav className='mr-auto mb-2 mb-lg-0 text-bg-info'>
                         <MDBNavbarItem>
-                        <Link className='nav-link' to='/'>Home</Link>
+                        <Link className='nav-link' style={{fontSize:"25px"}} to='/'>Home</Link>
                             {/* <MDBNavbarLink active aria-current='page' href='#'>
                                 Home
                             </MDBNavbarLink> */}
                         </MDBNavbarItem>
-                        <MDBNavbarItem>
+                        {/* <MDBNavbarItem>
                         <Link className='nav-link' to='/components'>Components</Link>
                         </MDBNavbarItem>
                         <MDBNavbarItem>
@@ -46,13 +46,13 @@ export default function     App() {
                         </MDBNavbarItem>
                         <MDBNavbarItem>
                         <Link className='nav-link' to='/examples'>Examples</Link>
-                        </MDBNavbarItem>
+                        </MDBNavbarItem> */}
                     </MDBNavbarNav>
 
-                    <form className='d-flex input-group w-auto'>
+                    {/* <form className='d-flex input-group w-auto'>
                         <input type='search' className='form-control' placeholder='Type query' aria-label='Search' />
                         <MDBBtn color='primary'>Search</MDBBtn>
-                    </form>
+                    </form> */}
                 </MDBCollapse>
             </MDBContainer>
         </MDBNavbar>
