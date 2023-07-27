@@ -2,10 +2,14 @@ ul li {
     list-style: none;
 }
 .title h1{
-    color: rgb(94, 169, 235);
+    color: rgb(0, 0, 0);
 }
 .link{
     font-size: 35px;
     color: rgb(189, 118, 118);
     text-decoration: none;
+    transition: all .5s;
+}
+.link:hover{
+    color: rgb(163, 231, 36);
 }

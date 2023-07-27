@@ -10,16 +10,13 @@ const home = () => {
                     <h1>list of Assignment</h1>
                     <ul className='h-assignment'>
                         <li>
-                            <Link className='link' to="/Examples"> examples</Link>
-                        </li>
-                        <li>
                             <Link className='link' to="/components"> Components</Link>
                         </li>
                         <li>
-                            <Link className='link' to="/lifecycle"> LifeCycle</Link>
+                            <Link className='link' to="/Examples"> Examples</Link>
                         </li>
                         <li>
-                            <Link className='link' to="/Examples"> examples</Link>
+                            <Link className='link' to="/lifecycle"> LifeCycle</Link>
                         </li>
                     </ul>
                 </div>
