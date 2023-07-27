@@ -1,0 +1,11 @@
+ul li {
+    list-style: none;
+}
+.title h1{
+    color: rgb(94, 169, 235);
+}
+.link{
+    font-size: 35px;
+    color: rgb(189, 118, 118);
+    text-decoration: none;
+}
