@@ -1,4 +1,4 @@
-import react, { useState } from 'react';
+import { useState } from 'react';
 // import {
 //   MDBContainer,
 //   MDBRow,
@@ -20,7 +20,7 @@ import react, { useState } from 'react';
 // } from 'mdb-react-ui-kit';
 // import RegistetComponent from "./RegistetComponent.jsx"
 // import './../LoginRegistration.css';
-// import './../LoginRegistration.css';
+import './../LoginRegistration.css';
 import { Link, useNavigate } from 'react-router-dom';
 import CustomHook from './../Hooks/customHook.jsx';
 import axios from 'axios';
@@ -116,7 +116,8 @@ const LoginCompoent = () => {
         <div className={ActiveClass ? "container active" : "container"}>
           <Link className='position-absolute z-index-1 end-0 p-2' to="/"><i className='fa fa-home'></i></Link>
           <div className="user signinBx">
-            <div className="imgBx"><img src="https://raw.githubusercontent.com/WoojinFive/CSS_Playground/master/Responsive%20Login%20and%20Registration%20Form/img1.jpg" alt="" /></div>
+            {/* <div className="imgBx"><img src="https://raw.githubusercontent.com/WoojinFive/CSS_Playground/master/Responsive%20Login%20and%20Registration%20Form/img1.jpg" alt="" /></div> */}
+            <div className="imgBx"><img src="data:image/jpeg;base64,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" alt="" /></div>
             <div className="formBx">
               <form method='post' onSubmit={savedata}>
                 <h2>Sign In</h2>
@@ -150,6 +151,7 @@ const LoginCompoent = () => {
                 </p>
               </form>
             </div>
+            {/* <div className="imgBx"><img src="https://raw.githubusercontent.com/WoojinFive/CSS_Playground/master/Responsive%20Login%20and%20Registration%20Form/img2.jpg" alt="" /></div> */}
             <div className="imgBx"><img src="https://raw.githubusercontent.com/WoojinFive/CSS_Playground/master/Responsive%20Login%20and%20Registration%20Form/img2.jpg" alt="" /></div>
           </div>
         </div>
