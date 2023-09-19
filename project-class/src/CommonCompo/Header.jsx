@@ -35,9 +35,9 @@ export default function     App() {
                     <MDBNavbarNav className='mr-auto mb-2 mb-lg-0 text-bg-info'>
                         <MDBNavbarItem>
                         <Link className='nav-link' style={{fontSize:"25px"}} to='/'>Home</Link>
-                            <MDBNavbarLink active aria-current='page' href='#'>
+                            {/* <MDBNavbarLink active aria-current='page' href='#'>
                                 Home
-                            </MDBNavbarLink>
+                            </MDBNavbarLink> */}
                         </MDBNavbarItem>
                         <MDBNavbarItem>
                         <Link className='nav-link' to='/components'>Components</Link>
