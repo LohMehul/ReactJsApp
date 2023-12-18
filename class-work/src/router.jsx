@@ -5,7 +5,7 @@ import AboutPage from "./AboutPage.jsx";
 import ContactPage from "./ContactPage.jsx";
 import HeaderComp from "./CommonCompo/Header";
 import ExampleCompo from "./ExampleCompo";
-
+import MobxPage from "./mobxlibrery"
 const ClassCompoRoute = React.lazy(()=>{ return import('./ClassCompo/ClassCompoRoute.jsx') })
 const FunctionalCompoRoute = React.lazy(()=>{ return import('./FunctionalCompo/FunctionalCompoRoute.jsx') })    
 // const FunctionalCompoRoute = React.lazy(()=>import('./FunctionalCompo/FunctionalCompoRoute'))
@@ -38,6 +38,10 @@ const MainRouter = createBrowserRouter([
               },
         ]
     },
+    // {
+    //     path: "/mobx",
+    //     element: <><HeaderComp/><MobxPage/></>,
+    // },
 ]);
 
 

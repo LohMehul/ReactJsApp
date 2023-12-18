@@ -5,7 +5,7 @@ import WelcomeToClassCompo from './WelcomeToFunctionalCompo.jsx';
 import FunctionalCompoState from './02FunctionalCompoState.jsx';
 import FunctionalCompoUseEffect from './03FunctionalCompoUseEffect.jsx';
 import FunctionalCompoUseContext from './07FunctionalCompoUseContext';
-
+import MobxLibrery from "../mobxlibrery.jsx"
 const FunctionalCompoRoute = () => {
     return (
         <Routes>
@@ -14,6 +14,7 @@ const FunctionalCompoRoute = () => {
                 <Route path="functionalcompostate" element={<FunctionalCompoState />} />
                 <Route path="functionalcompouseeffect" element={<FunctionalCompoUseEffect />} />
                 <Route path="functionalcompousecontext" element={<FunctionalCompoUseContext />} />
+                <Route path="mobxlibrary" element={<MobxLibrery />} />
             </Route>
         </Routes>
     );
