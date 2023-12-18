@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class ClassCompoState extends Component {
     constructor(props) {
         super(props);
-        this.state = {data:"Something"}
+        this.state = {data:"Somethings"}
         // this.changeData = this.changeData.bind(this)
     }
     // changeData =()=>{
@@ -21,7 +21,7 @@ class ClassCompoState extends Component {
     }
     
     render() {
-        let Something = "Data"
+        let Something = "Data about data "
         // const changeDataFunc=()=>{
         //     console.log("called");
         //     Something = "Change"

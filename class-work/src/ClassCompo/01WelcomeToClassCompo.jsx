@@ -18,22 +18,22 @@
 
 
 // import React, { useState, useEffect } from 'react';
-import React, { useEffect, useState } from "react";
-function App() {
-  const [data, setData] = useState(null);
+// import React, { useEffect, useState } from "react";
+// function App() {
+//   const [data, setData] = useState(null);
 
-  useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/todos')
-      .then(response => response.json())
-      .then(json => setData(json))
-      .catch(error => console.error(error));
-  }, []);
+//   useEffect(() => {
+//     fetch('https://jsonplaceholder.typicode.com/todos')
+//       .then(response => response.json())
+//       .then(json => setData(json))
+//       .catch(error => console.error(error));
+//   }, []);
 
-  return (
-    <div>
-      {data ? <pre>{JSON.stringify(data, null, 2)}</pre> : 'Loading...'}
-    </div>
-  );
-}
+//   return (
+//     <div>
+//       {data ? <pre>{JSON.stringify(data, null, 2)}</pre> : 'Loading...'}
+//     </div>
+//   );
+// }
 
-export default App;
+// export default App;
