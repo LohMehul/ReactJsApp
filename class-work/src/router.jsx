@@ -38,10 +38,10 @@ const MainRouter = createBrowserRouter([
               },
         ]
     },
-    // {
-    //     path: "/mobx",
-    //     element: <><HeaderComp/><MobxPage/></>,
-    // },
+    {
+        path: "/mobx",
+        element: <><HeaderComp/><MobxPage/></>,
+    },
 ]);
 
 
