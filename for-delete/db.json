@@ -109,6 +109,13 @@
       "email": "NKCSL@MDWL.COM",
       "password": "123",
       "id": 18
+    },
+    {
+      "roll": 2,
+      "username": "tester1",
+      "email": "tester1@gmail.com",
+      "password": "123",
+      "id": 19
     }
   ]
 }
